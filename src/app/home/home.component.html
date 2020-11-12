@@ -1,0 +1,8 @@
+<h1>Hi {{currentUser.firstName ? currentUser.firstName : 'Welcome to my Shopping App'}}!</h1>
+<p>Enjoy your shopping!!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.id ? user.id : ""}}{{user.firstName ? ' - ' + user.firstName : ""}})
+    </li>
+</ul>
